@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Trang Admin</title>
+  </head>
+  <body>
+    <div class="header-body">
+      <header class="header">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col-3">
+              <div class="inner-logo">
+                <img src="./images/logo3.png" alt="Logo" />
+                <span>EARTH ODYSSEY</span>
+              </div>
+            </div>
+            <div class="col-9">
+              <div class="profile">
+                <div class="row">
+                  <div class="col-10">
+  
+                  </div>            
+                  <div class="col-2">
+                    <div class="profile-logo dropdown dropdown-toggle">
+                      <img src="./images/profilelogo.jpg" alt="Profile Logo">
+                      <div class="profile-name">Tran Quang Minh</div>
+  
+                       <!-- Dropdown menu -->
+                        <div class="profile-dropdown">
+                          <ul>
+                            <li>Thông tin cá nhân</li>
+                            <li>Cài đặt</li>
+                            <li>Đăng xuất</li>
+                          </ul>
+                        </div>
+                        <!-- End Dropdown -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container-fluid body">
+        <div class="row w-100">
+          <div class="sider">
+            <div class="inner-sider">
+              <!-- <div class="dash-board">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Dashboard</span>
+              </div> -->
+              <div class="menu">
+                <div class="menu-title">POST</div>
+                <div class="menu-item" onclick="toggleMenu('postMenu', this)">
+                  <span><i class="fas fa-edit"></i> Bài viết</span>
+                  <i class="fas fa-chevron-left icon-toggle icon-dropdown"></i>
+                  <!-- Icon Toggle -->
+                </div>
+                <ul id="postMenu" class="submenu">
+                  <li><a href="#">Xem tất cả</a></li>
+                  <li><a href="#">Thêm mới</a></li>
+                </ul>
+  
+                <div class="menu-item" onclick="toggleMenu('categoryMenu', this)">
+                  <span><i class="fas fa-tag"></i> Thể loại</span>
+                  <i class="fas fa-chevron-left icon-toggle icon-dropdown"></i>
+                </div>
+                <ul id="categoryMenu" class="submenu">
+                  <li><a href="#">Thể loại 1</a></li>
+                  <li><a href="#">Thể loại 2</a></li>
+                </ul>
+  
+                <div class="menu-item" onclick="toggleMenu('pageMenu', this)">
+                  <span><i class="fas fa-file-alt"></i> Trang thông tin</span>
+                  <i class="fas fa-chevron-left icon-toggle icon-dropdown"></i>
+                </div>
+                <ul id="pageMenu" class="submenu">
+                  <li><a href="#">Trang 1</a></li>
+                  <li><a href="#">Trang 2</a></li>
+                </ul>
+  
+                <div class="menu-item" onclick="toggleMenu('commentMenu', this)">
+                  <span><i class="fas fa-comments"></i> Bình luận</span>
+                  <i class="fas fa-chevron-left icon-toggle icon-dropdown"></i>
+                </div>
+                <ul id="commentMenu" class="submenu">
+                  <li><a href="#">Xem bình luận</a></li>
+                  <li><a href="#">Quản lý bình luận</a></li>
+                </ul>
+              </div>
+  
+              <div class="menu">
+                <div class="menu-title">ADMINISTRATOR</div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="main">
+            <div class="card mb-3">
+              <div class="card-header">ARTICLES</div>
+              <div class="card-body">
+                <div class="inner-main">
+                  <div class="tabs">
+                    <span class="active">BASIC INFORMATION</span>
+                  </div>
+                  <form action="">
+                    <div class="form-section">
+                      <div class="row">
+                        <div class="thumbnail-section col-6">
+                          <label for="thumbnail">Thumbnail (*):</label>
+                          <div class="thumbnail" id="preview"></div>
+                          <!-- <input type="file" id="thumbnail" name="thumbnail" accept="image/*" class="image-input"> -->
+                          <input type="file" id="imageUpload" accept="image/*" hidden name="thumbnail">
+                          <button type="button" class="image-btn" onclick="document.getElementById('imageUpload').click();">
+                            Select Image
+                          </button>
+                        </div>
+  
+                        <div class="input-section col-6">
+                          <label for="title">Title/Headline (*):</label>
+                          <input type="text" id="title" name="title" placeholder="Nhập tiêu đề..." required>
+                          
+                          <label for="category">Category (*):</label>
+                          <input type="text" id="category" placeholder="Nhập danh mục..." name="category" required>
+                          
+                          <label for="subtitle">Subtitle:</label>
+                          <input type="text" id="subtitle" placeholder="Nhập phụ đề..." name="subtitle">
+                          
+                          <label for="author">Author Information (*):</label>
+                          <input type="text" id="author" placeholder="Nhập thông tin tác giả..." name="author" required>
+                          
+                          <label for="references">References/Sources:</label>
+                          <input type="text" id="references" name="references" placeholder="Nhập nguồn...">
+  
+                          <label for="summary">Summary:</label>
+                          <input type="textarea" id="summary" name="summary"  placeholder="Nhập tóm tắt...">
+  
+                          <label for="maincontent">Main Content:</label>
+                          <input type="textarea" id="maincontent" name="maincontent"  placeholder="Nhập nội dung...">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-button">
+                      <button type="reset" class="cancel">CANCEL</button>
+                      <button type="submit" class="upload">UPLOAD</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+        function toggleMenu(id, element) {
+            var menu = document.getElementById(id);
+            var icon = element.querySelector(".icon-toggle");
+
+            menu.classList.toggle("active"); 
+            icon.classList.toggle("rotate"); 
+        }
+        document.getElementById('imageUpload').addEventListener('change', function(event) {
+          const file = event.target.files[0];
+          if (file) {
+              const reader = new FileReader(); // API của JS đọc dữ liệu trên máy k cần gửi lên server
+              reader.readAsDataURL(file);
+              reader.onload = function(e) {
+                  document.getElementById('preview').style.backgroundImage = `url(${e.target.result})`;
+                  document.getElementById('preview').textContent = ""; 
+              };
+              
+          }
+        }); 
+        
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+:root {
+    --font-second: "Montserrat", sans-serif;
+    --font-main:"Bona Nova", serif;
+    --font-three:"Cairo", sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    /* font-family: var(--font-main);
+    font-weight: 400;
+    font-style: normal; */
+}
+ /* Định dạng chung */
+body {
+    color: white;
+}
+.container-fluid{
+    padding:0;
+}
+.row {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+}
