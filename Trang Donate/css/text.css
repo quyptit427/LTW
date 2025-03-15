@@ -1,0 +1,933 @@
+.p {
+    font-size: 16px;
+    max-width: 800px;
+    line-height: 1.6;
+    text-align: justify;
+    font-family: 'Montserrat';
+}
+
+.donate .hero-section {
+    font-family: 'Montserrat';
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: url('../images/pexels-kammeran-gonzalez-keola-3137381-30999888.jpg') no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.donate .hero-content {
+    border-radius: 10px;
+}
+
+.donate .hero-content h1 {
+    font-size: 70px;
+    font-weight: bold;
+    margin: 0;
+    color:rgba(red);
+}
+
+.donate .hero-section p {
+    font-size: 30px;
+    margin-top: 10px;
+    color:rgba(red);
+}
+
+.donate .left-column {
+    flex: 1;
+    text-align: left;
+    padding:20px;
+}
+
+.donate .right-column {
+    flex: 1;
+    background-color: #f7f3eb;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.donate .subtitle {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    color: #666;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    padding-top:10px;
+}
+
+.donate .title {
+    font-size: 36px;
+    font-weight: 700;
+    color: black;
+    line-height: 1.2;
+    margin-top:50px;
+}
+
+.donate .highlight-text {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    align-self: flex-start;
+    margin-top: -20px;
+}
+
+.donate .normal-text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+    line-height: 1.5;
+}
+
+body.Donate {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.donate .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.donate .column {
+    width: 48%;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.donate .button {
+    display: block;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s, color 0.3s;
+    margin-top: 10px;
+}
+
+.donate .yellow-button {
+    margin-top:50px;
+    background-color: #ffcc00;
+    color: black;
+    height:50px;
+    width:300px;
+}
+
+.donate .yellow-button:hover {
+    background-color: #e6b800;
+}
+
+.donate .outline-button {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    margin-top:25px;
+    height:50px;
+    width:300px;
+}
+
+.donate .outline-button:hover {
+    background-color: #f0f0f0;
+}
+
+.donate .accordion-item {
+    margin-top: 10px;
+}
+
+.donate .accordion-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Montserrat';
+    margin-bottom:20px;
+}
+
+.donate .accordion-header::after {
+    content: '+';
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: auto;
+}
+
+.donate .accordion-header.active::after {
+    content: '-';
+}
+
+.donate .accordion-content {
+    display: none;
+    padding: 10px;
+    background: #f1f1f1;
+    border-left: 3px solid #b1a97f;
+}
+
+.donate .accordion-content ul li {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    font-family: 'Montserrat';
+    list-style-type: none; 
+}
+
+.donate .accordion-content.show ul li {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .donate .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .donate .right-column {
+        padding: 20px;
+    }
+}
+
+/* Định nghĩa riêng cho phần donation, không trùng với code có sẵn */
+.donate .donation-section {
+    width: 85%;
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.donate .donation-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.donate .donation-image {
+    width: 100%;
+    max-width: 600px;
+    object-fit: cover;
+}
+
+.donate .underline {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    position: relative;
+}
+
+.donate .underline::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 2px;
+    background-color: black;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .donate .donation-box {
+        flex-direction: column;
+        text-align: center;
+    }
+    .donate .donation-text {
+        width: 90%;
+    }
+    .donate .donation-image {
+        width: 90%;
+    }
+}
+
+.donate .plat_1{
+    font-weight:300;
+}
+
+.donate .donation-text h4, .donate .donation-text h2{
+    font-family: "Montserrat";
+}
+
+.donate * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.donate .donation-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 50px auto;
+    background: white;
+}
+
+.donate .donation-left {
+    flex: 1;
+    background-color: #13c0c0;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.donate .donation-left h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.donate .donation-stat {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.donate .donation-stat span {
+    font-family: 'Water Brush';
+    font-size: 36px;
+    font-weight: 400;
+    color: black;
+    min-width: 100px;
+    text-align: right;
+    margin-right: 15px;
+    text-align: center;
+}
+
+.donate .donation-stat-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.donate .donation-right {
+    flex: 1;
+    background-color: #444141;
+    color: white;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.donate .donation-right h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    color: #ccc;
+    font-weight: 400;
+}
+
+.donate .donation-right p {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Montserrat';
+}
+
+.donate .donation-profile {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.donate .donation-profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.donate .donation-contact-info p {
+    font-size: 16px;
+    color: #bbb;
+    margin-bottom: 5px;
+    font-family: "Montserrat";
+    margin-top:10px;
+}
+
+.donate .donation-email {
+    color: #FFC72C;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .donate .donation-container {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .donate .donation-left, .donate .donation-right {
+        width: 100%;
+        padding: 40px;
+    }
+}
+
+.donate .donation-profile-1{
+    margin-left:50px;
+}
+
+.donate .donation-profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.donate .profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.donate .donation-profile-1 {
+    font-size: 14px;
+}
+
+.donate .donation-email {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.donate .donation-contact-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.donate .contact-right {
+    text-align: right;
+}
+
+.donate .qr-code {
+    position: fixed;
+    bottom: 10px; /* Đưa xuống dưới */
+    right: 10px; /* Căn phải */
+    width: 70px; /* Giữ nguyên kích thước */
+    height: auto;
+}
+/*end donate*/
+/* begin Emerald */
+body.E {
+    margin: 0;
+    font-family: 'Montserrat';
+    background: url('../images/pexels-kammeran-gonzalez-keola-3137381-30999888.jpg') no-repeat center center/cover;
+    height: 100vh;
+    background-attachment: fixed;
+    font-weight: 500;
+}
+
+.Emerald .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: auto;
+    position: relative;
+    flex-direction: row;
+    margin-top: 30px;
+    font-family: 'Montserrat';
+    padding-right: 50px;
+}
+
+.Emerald .donation-form {
+    width: 400px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.2);
+    border-radius: 10px;
+    position: relative;
+    font-family: 'Montserrat';
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.Emerald .fixed-text {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: left;
+    background: transparent;
+    font-family: 'Montserrat';
+}
+
+.Emerald h2, 
+.Emerald h3 {
+    color: #000;
+}
+
+.Emerald .donation-type {
+    display: flex;
+    margin-bottom: 10px;
+    font-family: 'Montserrat';
+}
+
+.Emerald .toggle {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    background: #f4f4f4;
+}
+
+.Emerald .toggle.active {
+    background-color: red;
+    color: white;
+}
+
+.Emerald .donation-amounts {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.Emerald .amount, 
+.Emerald #custom-amount {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background: #f4f4f4;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+}
+
+.Emerald .amount.selected {
+    padding: 20px;
+    background: red;
+    color: white;
+    border: 2px solid red;
+}
+
+.Emerald .next {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: red;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.Emerald .input-field, 
+.Emerald select, 
+.Emerald .amount {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+/* end Emerald*/
+/*begin Platinum*/
+body.P {
+    margin: 0;
+    font-family: 'Montserrat';
+    background: url('../images/pexels-kammeran-gonzalez-keola-3137381-30999888.jpg') no-repeat center center/cover;
+    height: 100vh;
+    background-attachment: fixed;
+    font-weight: 500;
+}
+
+.platinum .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: auto;
+    position: relative;
+    flex-direction: row;
+    margin-top: 30px;
+    font-family: 'Montserrat';
+    padding-right: 50px;
+}
+
+.platinum .donation-form {
+    width: 400px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.2);
+    border-radius: 10px;
+    position: relative;
+    font-family: 'Montserrat';
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.platinum .fixed-text {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: left;
+    background: transparent;
+    font-family: 'Montserrat';
+}
+
+.platinum h2,
+.platinum h3 {
+    color: #000;
+}
+
+.platinum .donation-type {
+    display: flex;
+    margin-bottom: 10px;
+    font-family: 'Montserrat';
+}
+
+.platinum .toggle {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    background: #f4f4f4;
+}
+
+.platinum .toggle.active {
+    background-color: red;
+    color: white;
+}
+
+.platinum .donation-amounts {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.platinum .amount,
+.platinum #custom-amount {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background: #f4f4f4;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+}
+
+.platinum .amount.selected {
+    padding: 20px;
+    background: red;
+    color: white;
+    border: 2px solid red;
+}
+
+.platinum .next {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: red;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.platinum .input-field,
+.platinum select,
+.platinum .amount {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+/*end Platinum*/
+/*begin login */
+.LOGIN *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body.LOGIN {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../images/pexels-soumadeep-das-358678-973165.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+.login .login-container {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    height: 620px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+/* 🔹 Ảnh nhỏ ở góc dưới bên trái */
+.login .corner-image {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔹 Tùy chỉnh dropdown */
+.login .language-switch {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.login .language-switch select {
+    width: 140px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    background-image: url('https://flagcdn.com/w40/us.png');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 24px 24px;
+    padding-left: 40px;
+    cursor: pointer;
+}
+
+.login h2 {
+    margin-bottom: 20px;
+}
+
+.login input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.login .remember {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.login .remember input {
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+}
+
+.login button {
+    width: 45%;
+    padding: 15px;
+    background: #6200ea;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.login button:hover {
+    background: #3700b3;
+}
+
+.login .social-login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.login .social-login a {
+    width: 45%;
+    padding: 12px;
+    font-size: 10px;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.login .facebook {
+    background: #4267B2;
+}
+
+.login .google {
+    background: #DB4437;
+}
+
+.login .separator {
+    font-size: 14px;
+    color: #333;
+}
+
+.login .social-login a i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+/*end login */
+/*begin signup*/
+.Sign * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body.Sign {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../images/pexels-soumadeep-das-358678-973165.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+.sign-up .register-container {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    height: 620px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.sign-up .corner-image {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔹 Dropdown language switch */
+.sign-up .language-switch {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.sign-up .language-switch select {
+    width: 140px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    background-image: url('https://flagcdn.com/w40/us.png');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 24px 24px;
+    padding-left: 40px;
+    cursor: pointer;
+}
+
+.sign-up h2 {
+    margin-bottom: 20px;
+}
+
+.sign-up input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.sign-up .terms {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.sign-up .terms input {
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+}
+
+.sign-up button {
+    width: 45%;
+    padding: 15px;
+    background: #6200ea;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sign-up button:hover {
+    background: #3700b3;
+}
+/*end signup*/

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/text.css">
+</head>
+<body class="LOGIN">
+    <div class="login">
+        <div class="login-container">
+            <div class="language-switch">
+                <select id="language" onchange="switchLanguage()">
+                    <option value="en" data-icon="https://flagcdn.com/w40/us.png">ENG</option>
+                    <option value="vi" data-icon="https://flagcdn.com/w40/vn.png">VIE</option>
+                </select>
+            </div>        
+            <h2 id="login-title">Login</h2>
+            <form>
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <div class="remember">
+                    <input type="checkbox" id="remember"> <label for="remember">Remember password</label>
+                </div>
+                <button type="submit" id="sign-in">Sign In</button>
+            </form>
+            <div class="social-login">
+                <a href="https://www.facebook.com/" class="facebook" id="facebook-login">
+                    <i class="fa-brands fa-facebook-f"></i> Sign in with Facebook
+                </a>
+                <span class="separator">OR</span>
+                <a href="https://accounts.google.com/" class="google" id="google-login">
+                    <i class="fa-brands fa-google"></i> Sign in with Google
+                </a>
+            </div>
+            <p class="signup-text" style="margin-top: 40px; color:green">
+                <a href="SIGNUP.HTML">Don't have an account? Sign up now</a>
+            </p>
+        </div>
+
+        <!-- Ảnh nhỏ ở góc dưới bên trái -->
+        <img src="images/dabfd626-4da7-4571-9229-97543a27d70a.jpg" alt="Corner Image" class="corner-image">
+    </div>
+
+    <script>
+        function switchLanguage() {
+            let langSelect = document.getElementById("language");
+            let selectedOption = langSelect.options[langSelect.selectedIndex];
+            let lang = selectedOption.value;
+
+            // Cập nhật cờ trong dropdown
+            langSelect.style.backgroundImage = `url(${selectedOption.getAttribute("data-icon")})`;
+
+            if (lang === "vi") {
+                document.getElementById("login-title").innerText = "Đăng nhập";
+                document.getElementById("username").placeholder = "Tên đăng nhập";
+                document.getElementById("password").placeholder = "Mật khẩu";
+                document.getElementById("sign-in").innerText = "Đăng nhập";
+                document.getElementById("facebook-login").innerHTML = '<i class="fa-brands fa-facebook-f"></i> Đăng nhập bằng Facebook';
+                document.getElementById("google-login").innerHTML = '<i class="fa-brands fa-google"></i> Đăng nhập bằng Google';
+                document.querySelector('label[for="remember"]').innerText = "Ghi nhớ mật khẩu";
+                document.querySelector(".signup-text a").innerText = "Chưa có tài khoản? Đăng ký ngay";
+            } else {
+                document.getElementById("login-title").innerText = "Login";
+                document.getElementById("username").placeholder = "Username";
+                document.getElementById("password").placeholder = "Password";
+                document.getElementById("sign-in").innerText = "Sign In";
+                document.getElementById("facebook-login").innerHTML = '<i class="fa-brands fa-facebook-f"></i> Sign in with Facebook';
+                document.getElementById("google-login").innerHTML = '<i class="fa-brands fa-google"></i> Sign in with Google';
+                document.querySelector('label[for="remember"]').innerText = "Remember password";
+                document.querySelector(".signup-text a").innerText = "Don't have an account? Sign up now";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/text.css">
+    <title>Registration Form</title>
+</head>
+
+<body class="Sign">
+    <div class="sign-up">
+        <div class="register-container">
+            <!-- Language Switch -->
+            <div class="language-switch">
+                <select id="language" onchange="switchLanguage()">
+                    <option value="en" data-icon="https://flagcdn.com/w40/us.png">ENG</option>
+                    <option value="vi" data-icon="https://flagcdn.com/w40/vn.png">VIE</option>
+                </select>
+            </div>
+
+            <!-- Registration Form -->
+            <h2 id="register-title">Register</h2>
+            <form>
+                <input type="text" id="fullname" placeholder="Full Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+
+                <!-- Terms and Conditions -->
+                <div class="terms">
+                    <input type="checkbox" id="agree">
+                    <label for="agree">I agree to the terms</label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" id="sign-up">Sign Up</button>
+            </form>
+
+            <!-- Sign-in Link -->
+            <p class="signin-text">
+                <a href="login.html" id="signin-link">Already have an account? Sign in now</a>
+            </p>
+        </div>
+        <img src="images/dabfd626-4da7-4571-9229-97543a27d70a.jpg" alt="Corner Image" class="corner-image">
+    </div>
+    <script>
+        function switchLanguage() {
+            let langSelect = document.getElementById("language");
+            let selectedOption = langSelect.options[langSelect.selectedIndex];
+            let lang = selectedOption.value;
+
+            // Cập nhật cờ trong dropdown
+            langSelect.style.backgroundImage = `url(${selectedOption.getAttribute("data-icon")})`;
+
+            if (lang === "vi") {
+                document.getElementById("register-title").innerText = "Đăng ký";
+                document.getElementById("fullname").placeholder = "Họ và tên";
+                document.getElementById("email").placeholder = "Email";
+                document.getElementById("password").placeholder = "Mật khẩu";
+                document.getElementById("confirm-password").placeholder = "Xác nhận mật khẩu";
+                document.getElementById("sign-up").innerText = "Đăng ký";
+                document.querySelector('label[for="agree"]').innerText = "Tôi đồng ý với điều khoản";
+                document.getElementById("signin-link").innerText = "Đã có tài khoản? Đăng nhập ngay";
+            } else {
+                document.getElementById("register-title").innerText = "Register";
+                document.getElementById("fullname").placeholder = "Full Name";
+                document.getElementById("email").placeholder = "Email";
+                document.getElementById("password").placeholder = "Password";
+                document.getElementById("confirm-password").placeholder = "Confirm Password";
+                document.getElementById("sign-up").innerText = "Sign Up";
+                document.querySelector('label[for="agree"]').innerText = "I agree to the terms";
+                document.getElementById("signin-link").innerText = "Already have an account? Sign in now";
+            }
+        }
+    </script>
+</body>
+
+</html>
