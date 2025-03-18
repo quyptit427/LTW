@@ -1,0 +1,106 @@
+
+
+.animal-main{
+  background-color: black;
+  margin:0;
+  padding:0;
+  color: #000;
+
+
+}
+.animal-main .trykker-regular {
+  font-family: "Trykker", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.animal-main .abril-fatface-regular {
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.animal-main .abril-fatface-bold {
+  font-family: "Abril Fatface", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.animal-main .dautrang {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+.animal-main .dautrang h1 {
+  color: white;
+  font-size: 24px;
+  
+}
+
+.animal-main .yellow-bar {
+  width: 5px;
+  height: 25px;
+  background-color: yellow;
+  margin-right: 10px;
+}
+
+
+.animal-main .banner {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height:600px;
+  max-width: auto; 
+  margin: auto;
+  
+}
+
+.animal-main .banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover; 
+}
+
+.animal-main .banner-text {
+  position: absolute;
+  bottom: 20px; 
+  left: 20px; 
+  color: white;
+  font-size: 24px;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.animal-main .container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;
+  justify-content: space-between;
+  padding: 50px;
+}
+.animal-main .left, .mid, .right{
+  width:30%;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  
+
+}
+.animal-main .news-tren img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.animal-main .news-duoi{
+  display: flex;
+  width:100%;
+  height:100%;
+  padding:10px 10px;
+  box-sizing: border-box;
+}
+
+.animal-main .news-duoi h4{
+  color:white;
+  font-size: 25px;
+}

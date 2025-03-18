@@ -1211,9 +1211,343 @@ header .menu li:nth-child(1) {
 .footer {
     padding-top: 20px;
 }
+/* ANIMAL */
 
 
+.animal-main{
+    background-color: black;
+    margin:0;
+    padding:0;
+    color: #000;
+  
+  
+  }
+  .animal-main .trykker-regular {
+    font-family: "Trykker", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .animal-main .abril-fatface-regular {
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .animal-main .abril-fatface-bold {
+    font-family: "Abril Fatface", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .animal-main .dautrang {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  .animal-main .dautrang h1 {
+    color: white;
+    font-size: 24px;
+    margin-top:10px;
+    
+  }
+  
+  .animal-main .yellow-bar {
+    width: 5px;
+    height: 25px;
+    background-color: yellow;
+    margin-right: 10px;
+  }
+  
+  
+  .animal-main .banner {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height:600px;
+    max-width: auto; 
+    margin: auto;
+    
+  }
+  
+  .animal-main .banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; 
+  }
+  
+  .animal-main .banner-text {
+    position: absolute;
+    bottom: 20px; 
+    left: 20px; 
+    color: white;
+    font-size: 24px;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  
+  .animal-main .container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 450px;
+    justify-content: space-between;
+    padding: 50px;
+  
+  }
+  .animal-main .left, .mid, .right{
+    width:30%;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    
+  
+  }
+  .animal-main .news-tren img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .animal-main .news-duoi{
+    display: flex;
+    width:100%;
+    height:100%;
+    padding:10px 10px;
+    box-sizing: border-box;
+  }
+  
+  .animal-main .news-duoi h4{
+    color:white;
+    font-size: 25px;
+  } 
+  /* END ANIMAL */
+  /*begin science */
+  .science{
+    background-color: #000;
+    color: #fff;
+}
+.science .navbar-brand {
+    font-weight: bold;
+    color: white;
+    font-size: 1.5rem;
+    padding-left: 0.5rem; 
+    border-left: 4px solid #f8dc3a;
+    font-family: "Abril Fatface", serif;
+    line-height: 1; 
+    display: flex;
+    align-items: center; 
+    height: 100%; 
+}
 
+.science .main-feature {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.science .main-feature img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.science .main-feature .feature-title {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    font-size: 2rem;
+    font-family: "Abril Fatface", serif;
+}
+
+.science .article-card {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    overflow: hidden;
+}
+
+.science .article-card img {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.science .article-card:hover img {
+    transform: scale(1.05);
+}
+
+.science .article-title {
+    margin-top: 10px; 
+    font-size: 18px;
+    padding: 5px 10px;
+    font-family:  "Trykker", serif;;
+}
+/*end science */
+/*begin bao Nature */
+.bai-nature .container {
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+.bai-nature .article-header {
+    background-color: #222;
+    color: white;
+    padding: 30px;
+}
+
+.bai-nature .dna-image {
+    width: 100%;
+    height: 515px;
+    object-fit: cover;
+    object-position: left;
+}
+.bai-nature .science-badge {
+    border: 1px solid white;
+    padding: 5px 15px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.bai-nature .article-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.bai-nature .article-text {
+    color: #aaa;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.bai-nature .author-info {
+    margin-top: 30px;
+}
+.bai-nature .author-name {
+    font-weight: bold;
+}
+.bai-nature .article-date {
+    color: #aaa;
+}
+.bai-nature .article-footer {
+    background-color: #f9f9f9;
+    padding: 10px 20px;
+    width: 700px;
+    font-size: 12px;
+    font-style: italic;
+    color: #666;
+    display: flex;
+    align-items: center; 
+}
+
+.bai-nature article-footer::before {
+    content: "";
+    width: 3px;
+    height: 60px;
+    border-left:  3px solid #f8dc3a;
+    margin-right: 10px; 
+}
+
+.bai-nature .photo-credit {
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.bai-nature .nd {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.9;
+    width: 1100px;
+    justify-content: center; 
+    margin: 0 auto; 
+    text-align: justify; 
+}
+.bai-nature .img1 {
+    width: 900px;
+    display: block; 
+    margin: 30px auto 0 auto; 
+    margin-bottom: 30px;
+}
+
+/*end bao Nature*/
+/*begin bao Animal */
+.bai-animal .container {
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+.bai-animal .article-header {
+    background-color: #222;
+    color: white;
+    padding: 30px;
+}
+
+.bai-animal .dna-image {
+    width: 100%;
+    height: 515px;
+    object-fit: cover;
+    object-position: left;
+}
+.bai-animal .science-badge {
+    border: 1px solid white;
+    padding: 5px 15px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.bai-animal .article-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.bai-animal .article-text {
+    color: #aaa;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.bai-animal .author-info {
+    margin-top: 30px;
+}
+.bai-animal .author-name {
+    font-weight: bold;
+}
+.bai-animal .article-date {
+    color: #aaa;
+}
+.bai-animal .article-footer {
+    background-color: #f9f9f9;
+    padding: 10px 20px;
+    width: 700px;
+    font-size: 12px;
+    font-style: italic;
+    color: #666;
+    display: flex;
+    align-items: center; 
+}
+
+.bai-animal article-footer::before {
+    content: "";
+    width: 3px;
+    height: 60px;
+    border-left:  3px solid #f8dc3a;
+    margin-right: 10px; 
+}
+
+.bai-animal .photo-credit {
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.bai-animal .nd {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.9;
+    width: 1100px;
+    justify-content: center; 
+    margin: 0 auto; 
+    text-align: justify; 
+}
+.bai-animal .img1 {
+    width: 900px;
+    display: block; 
+    margin: 30px auto 0 auto; 
+    margin-bottom: 30px;
+}
+/*end bao Animal */
 
 
 
